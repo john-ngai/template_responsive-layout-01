@@ -1,7 +1,16 @@
+// Packages
+import { Route, Routes } from 'react-router-dom';
+// Components
+import Layout from './components/Layout';
+// Stylesheet
 import './style.scss';
 
 export default function App() {
   return (
-    <div>Component - App</div>
+    <Routes>
+      <Route path='/'
+        element={<Layout />}
+      />
+    </Routes>
   );
 }
