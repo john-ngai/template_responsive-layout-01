@@ -2,4 +2,10 @@
   min-height: 50px;
   background-color: rgb(240, 240, 240);
   border-radius: 20px 20px 0 0; // Temporary
+  padding: 5px 10px;
+
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+  }
 }
