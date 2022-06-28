@@ -1,11 +1,14 @@
 .container--header {
   min-height: 50px;
-  background-color: rgb(240, 240, 240);
+  background-color: white;
   border-radius: 20px 20px 0 0; // Temporary
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   padding: 5px 10px;
+  display: flex;
+  align-items: center;
 
   .logo {
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 25px;
+    font-weight: 500;
   }
 }
