@@ -1,5 +1,7 @@
+import './Layout.scss';
+
 export default function Layout() {
   return (
-    <div>Component - Layout</div>
+    <div className='container--layout'></div>
   );
 }

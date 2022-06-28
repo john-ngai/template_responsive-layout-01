@@ -1,0 +1,10 @@
+.container--layout {
+  border: 5px solid grey;
+  border-radius: 25px;
+  width: 360px;
+  min-height: 768px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
