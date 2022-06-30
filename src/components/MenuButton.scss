@@ -4,7 +4,8 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 15%;
+  top: 14px;
+  left: 93%;
   cursor: pointer;
 
   .line {
@@ -13,9 +14,9 @@
     background-color: #333;
     position: relative;
     transition: background-color 0.2s ease-out;
-    top: 50%; // Subject to change
-    left: 50%; // Subject to change
-    transform: translate(-50%, -50%); // Subject to change
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .line:before,
