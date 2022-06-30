@@ -1,6 +1,7 @@
 // Packages
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 // Components
 import MenuButton from './MenuButton';
 // Stylesheet
@@ -23,25 +24,19 @@ export default function Navigation() {
       />
       <ul className={menuClass}>
         <div className='menu--nav'>
-          <li onClick={toggleOpenMenuHandler}>Home</li>
-          <li onClick={toggleOpenMenuHandler}>About</li>
-          <li onClick={toggleOpenMenuHandler}>Contact</li>
+          <Link to='/'><li onClick={toggleOpenMenuHandler}>Home</li></Link>
+          <Link to='about'><li onClick={toggleOpenMenuHandler}>About</li></Link>
+          <Link to='contact'><li onClick={toggleOpenMenuHandler}>Contact</li></Link>
         </div>
 
         <div className='menu--social'>
-          <span className='icon'
-            onClick={toggleOpenMenuHandler}
-          >
+          <span className='icon' onClick={toggleOpenMenuHandler}>
             <FontAwesomeIcon icon={['fab', 'linkedin']} />
           </span>
-          <span className='icon'
-            onClick={toggleOpenMenuHandler}
-          >
+          <span className='icon' onClick={toggleOpenMenuHandler}>
             <FontAwesomeIcon icon={['fab', 'github']} />
           </span>
-          <span className='icon'
-            onClick={toggleOpenMenuHandler}
-          >
+          <span className='icon' onClick={toggleOpenMenuHandler}>
             <FontAwesomeIcon icon={['fab', 'instagram']} />
           </span>
         </div>
