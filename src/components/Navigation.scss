@@ -6,10 +6,6 @@ nav {
     height: 93.5%;
     top: 50px;
     padding: 0 10px;
-
-    transform: translateX(-101%);
-    transition: transform 0.5s ease;
-
     z-index: 1;
 
     .menu--nav {
@@ -32,16 +28,24 @@ nav {
       display: flex;
       justify-content: center;
       gap: 30px;
-      
+
       .icon {
-        label {
-          cursor: pointer;
-        }
+        cursor: pointer;
       }
       .icon:hover {
         color: rgb(150, 150, 150);
       }
     }
+  }
+
+  .menu.inactive {
+    transform: translateX(-101%);
+    transition: transform 0.5s ease;
+  }
+
+  .menu.active {
+    transform: translateX(0%);
+    transition: transform 0.5s ease;
   }
 
   .shader {
