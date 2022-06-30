@@ -7,32 +7,41 @@ export default function Navigation() {
   return (
     <nav>
       <input className='menu-btn' type='checkbox' id='menu-btn' />
+
       <label className='menu-icon' for='menu-btn'>
-        <span className='navicon' />
+        <span className='navicon' onClick={() => console.log('navicon clicked!')} />
       </label>
 
       <ul className='menu'>
         <div className='menu--nav'>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
+          <label for='menu-btn'>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+          </label>
         </div>
 
         <div className='menu--social'>
           <span className='icon'>
-            <FontAwesomeIcon
-              icon={['fab', 'linkedin']}
-            />
+            <label for='menu-btn'>
+              <FontAwesomeIcon
+                icon={['fab', 'linkedin']}
+              />
+            </label>
           </span>
           <span className='icon'>
-            <FontAwesomeIcon
-              icon={['fab', 'github']}
-            />
+            <label for='menu-btn'>
+              <FontAwesomeIcon
+                icon={['fab', 'github']}
+              />
+            </label>
           </span>
           <span className='icon'>
-            <FontAwesomeIcon
-              icon={['fab', 'instagram']}
-            />
+            <label for='menu-btn'>
+              <FontAwesomeIcon
+                icon={['fab', 'instagram']}
+              />
+            </label>
           </span>
         </div>
       </ul>

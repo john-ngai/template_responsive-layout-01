@@ -10,7 +10,7 @@ nav {
   .menu-btn:checked ~ .menu-icon .navicon:before {
     transform: rotate(-45deg);
   }
-  
+
   .menu-btn:checked ~ .menu-icon .navicon:after {
     transform: rotate(45deg);
   }
@@ -29,9 +29,9 @@ nav {
 
   .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
   .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-  top: 0;
-}
-  
+    top: 0;
+  }
+
   .menu-icon {
     cursor: pointer;
     display: inline-block;
@@ -95,12 +95,10 @@ nav {
         background-color: rgb(240, 240, 240);
       }
     }
-
     .menu--social {
       margin-top: 20px;
       padding-top: 20px;
       border-top: 1px solid grey;
-
       color: rgb(75, 75, 75);
       font-size: 20px;
       display: flex;
@@ -108,14 +106,14 @@ nav {
       gap: 30px;
       
       .icon {
-        cursor: pointer;
+        label {
+          cursor: pointer;
+        }
       }
-
       .icon:hover {
         color: rgb(150, 150, 150);
       }
     }
-
   }
 
   .shader {
