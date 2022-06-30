@@ -39,7 +39,7 @@ nav {
   }
 
   .menu.inactive {
-    transform: translateX(-101%);
+    transform: translateX(-102%);
     transition: transform 0.5s ease;
   }
 
@@ -58,5 +58,9 @@ nav {
     top: 50px;
     z-index: -1;
     transition: opacity 0.5s ease, z-index 1.5s ease;
+  }
+
+  .menu.active ~ .shader {
+    opacity: 10%;
   }
 }
