@@ -1,14 +1,24 @@
 // Packages
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useState } from 'react';
 // Components
 import MenuButton from './MenuButton';
 // Stylesheet
 import './Navigation.scss';
 
 export default function Navigation() {
+  const [openMenu, setOpenMenu] = useState(false);
+  
+  const toggleOpenMenuHandler = () => {
+    setOpenMenu(prev => !prev);
+  }
+
   return (
     <nav>
-      <MenuButton />
+      <MenuButton
+        openMenu={openMenu}
+        toggleOpenMenu={toggleOpenMenuHandler}
+      />
       <ul className='menu'>
         <div className='menu--nav'>
             <li>Home</li>

@@ -3,18 +3,14 @@ import { useState } from 'react';
 // Stylesheet
 import './MenuButton.scss';
 
-export default function MenuButton() {
-  const [display, setDisplay] = useState(false);
+export default function MenuButton(props) {
+  const { openMenu, toggleOpenMenu } = props;
   
-  const toggleDisplayHandler = () => {
-    return setDisplay(prev => !prev);
-  }
-  
-  const lineClass = display ? 'line active' : 'line inactive';
+  const lineClass = openMenu ? 'line active' : 'line inactive';
 
   return (
     <div className='container--MenuButton'
-      onClick={toggleDisplayHandler}
+      onClick={toggleOpenMenu}
     >
       <div className={lineClass} />
     </div>
