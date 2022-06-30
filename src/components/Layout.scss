@@ -1,4 +1,4 @@
-.container--layout {
+.app {
   border: 5px solid grey;
   border-radius: 25px;
   width: 360px;
@@ -8,7 +8,8 @@
   left: 50%;
   transform: translateX(-50%);
 
-  .outlet {
+  .page {
     min-height: 643px;
+    padding: 10px 10px;
   }
 }

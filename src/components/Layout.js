@@ -9,10 +9,10 @@ import './Layout.scss';
 
 export default function Layout() {
   return (
-    <div className='container--layout'>
+    <div className='app'>
       <Header />
       <Navigation />
-      <div className='outlet'>
+      <div className='page'>
         <Outlet />
       </div>
       <Footer />
