@@ -1,33 +1,17 @@
 nav {
   .menu {
-    border: 1px solid rgb(200, 200, 200);
-    background-color: white;
     position: absolute;
     width: 100%;
-    max-width: 360px;
-    height: calc(100% - 50px);
-    top: 50px;
-    padding: 0 10px;
     z-index: 1;
 
     .menu--nav {
-      li:first-child {
-        margin-top: 10px;
-      }
       li {
         list-style: none;
-        padding: 5px 0;
         text-align: center;
         cursor: pointer;
       }
-      li:hover {
-        background-color: rgb(240, 240, 240);
-      }
     }
     .menu--social {
-      margin-top: 10px;
-      padding-top: 10px;
-      border-top: 1px solid grey;
       color: rgb(75, 75, 75);
       font-size: 20px;
       display: flex;
@@ -42,18 +26,47 @@ nav {
       }
     }
   }
+}
 
-  .menu.inactive {
+@media only screen and (max-width: 768px) {
+  .menu {
+    border: 1px solid rgb(200, 200, 200); // Mobile & tablet specific
+    background-color: white; // Mobile & tablet specific
+    max-width: 360px; // Mobile & tablet specific
+    height: calc(100% - 50px); // Mobile & tablet specific
+    top: 50px; // Mobile & tablet specific
+    padding: 0 10px; // Mobile & tablet specific
+
+    .menu--nav {
+      li:first-child {
+        margin-top: 10px; // Mobile & tablet specific
+      }
+      li {
+        padding: 5px 0; // Mobile & tablet specific
+      }
+      li:hover {
+        background-color: rgb(240, 240, 240); // Mobile & tablet specific
+      }
+    }
+
+    .menu--social {
+      margin-top: 10px; // Mobile & tablet specific
+      padding-top: 10px; // Mobile & tablet specific
+      border-top: 1px solid grey; // Mobile & tablet specific
+    }
+  }
+
+  .menu.inactive { // Mobile & tablet specific
     transform: translateX(-102%);
     transition: transform 0.5s ease;
   }
 
-  .menu.active {
+  .menu.active { // Mobile & tablet specific
     transform: translateX(0%);
     transition: transform 0.5s ease;
   }
 
-  .shader {
+  .shader { // Mobile & tablet specific
     background-color: black;
     opacity: 0%;
     position: absolute;
@@ -65,7 +78,7 @@ nav {
     transition: opacity 0.5s ease, z-index 1.5s ease;
   }
 
-  .menu.active ~ .shader {
+  .menu.active ~ .shader { // Mobile & tablet specific
     opacity: 20%;
     z-index: 0;
     transition: opacity 0.5s ease;
