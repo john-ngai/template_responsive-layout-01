@@ -3,9 +3,9 @@ import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 // Components
 import Layout from './components/Layout';
-import Home from './components/Home';
-import About from './components/About';
-import Contact from './components/Contact';
+import Home from './components/Pages/Home';
+import About from './components/Pages/About';
+import Contact from './components/Pages/Contact';
 // Stylesheet
 import './style.scss';
 
