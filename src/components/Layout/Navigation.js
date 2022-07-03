@@ -62,7 +62,9 @@ export default function Navigation({ page }) {
           </span>
         </div>
       </ul>
-      <div className='shader' />
+      <div className='shader'
+        onClick={toggleOpenMenuHandler}
+      />
     </nav >
   );
 }
