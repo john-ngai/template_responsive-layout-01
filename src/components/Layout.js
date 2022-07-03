@@ -7,11 +7,11 @@ import Footer from './Footer';
 // Stylesheet
 import './Layout.scss';
 
-export default function Layout() {
+export default function Layout({ page }) {
   return (
     <div className='app'>
       <Header />
-      <Navigation />
+      <Navigation page={page} />
       <div className='page'>
         <Outlet />
       </div>

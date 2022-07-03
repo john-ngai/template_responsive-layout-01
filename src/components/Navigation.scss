@@ -85,3 +85,31 @@ nav {
     transition: opacity 0.5s ease;
   }
 }
+
+// Desktop & Large Tablets
+@media only screen and (min-width: 769px) {
+  .menu {
+    top: 40px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    
+    .menu--nav {
+      font-size: 18px;
+      display: flex;
+      gap: 40px;
+
+      li {
+        width: 110%;
+      }
+      
+      li:hover {
+        border-bottom: 2px solid black;
+      }
+
+      li.selected {
+        border-bottom: 2px solid black;
+      }
+    }
+  }
+}
