@@ -1,8 +1,8 @@
 // Packages
 import { Outlet } from 'react-router-dom';
 // Components
-import Navigation from './Navigation';
 import Header from './Header';
+import Navigation from './Navigation';
 import Footer from './Footer';
 // Stylesheet
 import './Layout.scss';

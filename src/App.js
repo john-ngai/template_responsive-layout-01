@@ -1,4 +1,5 @@
 // Packages
+import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 // Components
 import Layout from './components/Layout';
@@ -7,7 +8,6 @@ import About from './components/About';
 import Contact from './components/Contact';
 // Stylesheet
 import './style.scss';
-import { useState } from 'react';
 
 export default function App() {
   const [page, setPage] = useState('');
