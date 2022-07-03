@@ -6,7 +6,24 @@
   position: absolute;
 
   .page {
-    min-height: calc(100% - 50px - 75px);
-    padding: 10px 10px;
+    padding: 15px 20px;
+  }
+}
+
+// Mobile & Small Tablets
+@media only screen and (max-width: 768px) {
+  .app {
+    .page {
+      min-height: calc(100% - 50px - 75px);
+    }
+  }
+}
+
+// Desktop & Large Tablets
+@media only screen and (min-width: 769px) {
+  .app {
+    .page {
+      min-height: calc(100% - 75px - 75px);
+    }
   }
 }
