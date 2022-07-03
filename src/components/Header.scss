@@ -1,14 +1,27 @@
 .container--header {
-  min-height: 50px;
-  background-color: white;
-  border-radius: 20px 20px 0 0; // Temporary
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   padding: 5px 10px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
 
   .logo {
     font-size: 25px;
     font-weight: 500;
+  }
+}
+
+// Mobile & Small Tablets
+@media only screen and (max-width: 768px) {
+  .container--header {
+    height: 50px;
+    align-items: flex-start;
+  }
+}
+
+// Desktop & Large Tablets
+@media only screen and (min-width: 769px) {
+  .container--header {
+    height: 75px;
+    align-items: center;
   }
 }
