@@ -7,14 +7,32 @@ import About from './components/About';
 import Contact from './components/Contact';
 // Stylesheet
 import './style.scss';
+import { useState } from 'react';
 
 export default function App() {
+  const [page, setPage] = useState('');
+
   return (
     <Routes>
       <Route path='/' element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path='about' element={<About />} />
-        <Route path='contact' element={<Contact />} />
+        <Route index element={
+          <Home
+            page={page}
+            setPage={setPage}
+          />
+        } />
+        <Route path='about' element={
+          <About
+            page={page}
+            setPage={setPage}
+          />
+        } />
+        <Route path='contact' element={
+          <Contact
+            page={page}
+            setPage={setPage}
+          />
+        } />
       </Route>
     </Routes>
   );
