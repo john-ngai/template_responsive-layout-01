@@ -5,14 +5,13 @@ import './MenuButton.scss';
 
 export default function MenuButton(props) {
   const { openMenu, toggleOpenMenu } = props;
-  
-  const lineClass = openMenu ? 'line active' : 'line inactive';
+  const naviconClass = openMenu ? 'navicon active' : 'navicon inactive';
 
   return (
     <div className='container--MenuButton'
       onClick={toggleOpenMenu}
     >
-      <div className={lineClass} />
+      <div className={naviconClass} />
     </div>
   );
 }
