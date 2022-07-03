@@ -5,7 +5,7 @@ import Header from './Header';
 import Navigation from './Navigation';
 import Footer from './Footer';
 // Stylesheet
-import './Layout.scss';
+import './index.scss';
 
 export default function Layout({ page }) {
   return (
