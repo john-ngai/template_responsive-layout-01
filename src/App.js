@@ -16,22 +16,13 @@ export default function App() {
     <Routes>
       <Route path='/' element={<Layout page={page} />}>
         <Route index element={
-          <Home
-            page={page}
-            setPage={setPage}
-          />
+          <Home setPage={setPage} />
         } />
         <Route path='about' element={
-          <About
-            page={page}
-            setPage={setPage}
-          />
+          <About setPage={setPage} />
         } />
         <Route path='contact' element={
-          <Contact
-            page={page}
-            setPage={setPage}
-          />
+          <Contact setPage={setPage} />
         } />
       </Route>
     </Routes>
