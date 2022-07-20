@@ -43,6 +43,7 @@ export default function Navigation({ page }) {
             <a
               href='https://www.linkedin.com/in/john-ngai/'
               target='_blank'
+              rel='noreferrer'
             >
               <FontAwesomeIcon icon={['fab', 'linkedin']} /></a>
           </span>
@@ -50,6 +51,7 @@ export default function Navigation({ page }) {
             <a
               href='https://github.com/john-ngai'
               target='_blank'
+              rel='noreferrer'
             >
               <FontAwesomeIcon icon={['fab', 'github']} /></a>
           </span>
@@ -57,6 +59,7 @@ export default function Navigation({ page }) {
             <a
               href='#'
               target='_blank'
+              rel='noreferrer'
             >
               <FontAwesomeIcon icon={['fab', 'instagram']} /></a>
           </span>
