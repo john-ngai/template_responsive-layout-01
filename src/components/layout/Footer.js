@@ -5,7 +5,7 @@ import './Footer.scss';
 
 export default function Footer() {
   return (
-    <div className='container--footer'>
+    <footer>
       <div className='social-media'>
         <span className='icon'>
           <a
@@ -45,6 +45,6 @@ export default function Footer() {
           rel='noreferrer'
         >John Ngai</a>.
       </p>
-    </div>
+    </footer>
   );
 }
