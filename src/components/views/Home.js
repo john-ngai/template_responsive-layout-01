@@ -4,6 +4,6 @@ export default function Home({ setView }) {
   useEffect(() => setView('HOME'));
 
   return (
-    <div>Component - Home</div>
+    <main>Component - Home</main>
   );
 }
