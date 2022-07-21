@@ -7,12 +7,21 @@ import MenuButton from './MenuButton';
 // Stylesheet
 import './Navigation.scss';
 
-export default function Navigation({ page }) {
+export default function Navigation({ view }) {
   const [openMenu, setOpenMenu] = useState(false);
   const toggleOpenMenuHandler = () => {
     setOpenMenu(prev => !prev);
   }
-  const menuClass = openMenu ? 'menu active' : 'menu inactive';
+  let menuClass;
+  if (openMenu) {
+    menuClass = 'menu active';
+    // Disable page scrolling.
+    document.body.style.overflow = 'hidden';
+  } else {
+    menuClass = 'menu inactive';
+    // Enable page scrolling.
+    document.body.style.overflow = 'auto';
+  }
 
   return (
     <nav>
@@ -23,17 +32,17 @@ export default function Navigation({ page }) {
       <ul className={menuClass}>
         <div className='menu--nav'>
           <Link to='/'>
-            <li className={page === 'HOME' ? 'selected' : ''}
+            <li className={view === 'HOME' ? 'selected' : ''}
               onClick={toggleOpenMenuHandler}
             >Home</li>
           </Link>
           <Link to='about'>
-            <li className={page === 'ABOUT' ? 'selected' : ''}
+            <li className={view === 'ABOUT' ? 'selected' : ''}
               onClick={toggleOpenMenuHandler}
             >About</li>
           </Link>
           <Link to='contact'>
-            <li className={page === 'CONTACT' ? 'selected' : ''}
+            <li className={view === 'CONTACT' ? 'selected' : ''}
               onClick={toggleOpenMenuHandler}
             >Contact</li>
           </Link>
@@ -43,6 +52,7 @@ export default function Navigation({ page }) {
             <a
               href='https://www.linkedin.com/in/john-ngai/'
               target='_blank'
+              rel='noreferrer'
             >
               <FontAwesomeIcon icon={['fab', 'linkedin']} /></a>
           </span>
@@ -50,6 +60,7 @@ export default function Navigation({ page }) {
             <a
               href='https://github.com/john-ngai'
               target='_blank'
+              rel='noreferrer'
             >
               <FontAwesomeIcon icon={['fab', 'github']} /></a>
           </span>
@@ -57,6 +68,7 @@ export default function Navigation({ page }) {
             <a
               href='#'
               target='_blank'
+              rel='noreferrer'
             >
               <FontAwesomeIcon icon={['fab', 'instagram']} /></a>
           </span>

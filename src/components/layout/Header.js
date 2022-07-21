@@ -2,8 +2,8 @@ import './Header.scss';
 
 export default function Header() {
   return (
-    <div className='container--header'>
+    <header>
       <span className='logo'>Logo</span>
-    </div>
+    </header>
   );
 }

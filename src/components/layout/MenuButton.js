@@ -1,6 +1,3 @@
-// Packages
-import { useState } from 'react';
-// Stylesheet
 import './MenuButton.scss';
 
 export default function MenuButton(props) {
