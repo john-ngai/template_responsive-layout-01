@@ -1,6 +1,4 @@
-// Packages
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// Stylesheet
 import './Footer.scss';
 
 export default function Footer() {
