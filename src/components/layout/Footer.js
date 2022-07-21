@@ -11,7 +11,7 @@ export default function Footer() {
           <a
             href='https://www.linkedin.com/in/john-ngai/'
             target='_blank'
-            rel='noreferror'
+            rel='noreferrer'
           >
             <FontAwesomeIcon
               icon={['fab', 'linkedin']}
@@ -21,7 +21,7 @@ export default function Footer() {
           <a
             href='https://github.com/john-ngai'
             target='_blank'
-            rel='noreferror'
+            rel='noreferrer'
           >
             <FontAwesomeIcon
               icon={['fab', 'github']}
@@ -31,7 +31,7 @@ export default function Footer() {
           <a
             href='#'
             target='_blank'
-            rel='noreferror'
+            rel='noreferrer'
           >
             <FontAwesomeIcon
               icon={['fab', 'instagram']}
@@ -42,7 +42,7 @@ export default function Footer() {
         &copy; 2022 Company. Designed by <a
           href='https://johnngai.com/'
           target='_blank'
-          rel='noreferror'
+          rel='noreferrer'
         >John Ngai</a>.
       </p>
     </div>
