@@ -2,7 +2,7 @@ import './Header.scss';
 
 export default function Header() {
   return (
-    <header className='container Header'>
+    <header>
       <span className='logo'>Logo</span>
     </header>
   );
