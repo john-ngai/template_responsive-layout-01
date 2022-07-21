@@ -12,7 +12,16 @@ export default function Navigation({ page }) {
   const toggleOpenMenuHandler = () => {
     setOpenMenu(prev => !prev);
   }
-  const menuClass = openMenu ? 'menu active' : 'menu inactive';
+  let menuClass;
+  if (openMenu) {
+    menuClass = 'menu active';
+    // Disable page scrolling.
+    document.body.style.overflow = 'hidden';
+  } else {
+    menuClass = 'menu inactive';
+    // Enable page scrolling.
+    document.body.style.overflow = 'auto';
+  }
 
   return (
     <nav>
