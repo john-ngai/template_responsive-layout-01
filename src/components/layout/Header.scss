@@ -1,4 +1,4 @@
-.container--header {
+.container.Header {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   padding: 5px 10px;
   display: flex;
@@ -12,7 +12,7 @@
 
 // Mobile & Small Tablets
 @media only screen and (max-width: 768px) {
-  .container--header {
+  .container.Header {
     height: 50px;
     align-items: flex-start;
   }
@@ -20,7 +20,7 @@
 
 // Desktop & Large Tablets
 @media only screen and (min-width: 769px) {
-  .container--header {
+  .container.Header {
     height: 75px;
     align-items: center;
   }
