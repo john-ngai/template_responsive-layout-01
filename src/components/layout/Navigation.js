@@ -7,7 +7,7 @@ import MenuButton from './MenuButton';
 // Stylesheet
 import './Navigation.scss';
 
-export default function Navigation({ page }) {
+export default function Navigation({ view }) {
   const [openMenu, setOpenMenu] = useState(false);
   const toggleOpenMenuHandler = () => {
     setOpenMenu(prev => !prev);
@@ -32,17 +32,17 @@ export default function Navigation({ page }) {
       <ul className={menuClass}>
         <div className='menu--nav'>
           <Link to='/'>
-            <li className={page === 'HOME' ? 'selected' : ''}
+            <li className={view === 'HOME' ? 'selected' : ''}
               onClick={toggleOpenMenuHandler}
             >Home</li>
           </Link>
           <Link to='about'>
-            <li className={page === 'ABOUT' ? 'selected' : ''}
+            <li className={view === 'ABOUT' ? 'selected' : ''}
               onClick={toggleOpenMenuHandler}
             >About</li>
           </Link>
           <Link to='contact'>
-            <li className={page === 'CONTACT' ? 'selected' : ''}
+            <li className={view === 'CONTACT' ? 'selected' : ''}
               onClick={toggleOpenMenuHandler}
             >Contact</li>
           </Link>
